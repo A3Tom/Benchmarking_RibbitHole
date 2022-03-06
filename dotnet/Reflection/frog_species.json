@@ -1,0 +1,20 @@
+{
+    "Archey's frog": {
+        "Family": "Leiopelmatidae",
+        "Genus": "Leiopelma",
+        "Species": "Leiopelma archeyi",
+        "IUCNStatus": 4
+    },
+    "Mexican burrowing toad": {
+        "Family": "Rhinophrynidae",
+        "Genus": "Rhinophrynus",
+        "Species": "Rhinophrynus dorsalis",
+        "IUCNStatus": 6
+    },
+    "Chiriqui harlequin frog": {
+        "Family": "Bufonidae",
+        "Genus": "Atelopus",
+        "Species": "Atelopus chiriquiensis",
+        "IUCNStatus": 0
+    }
+}
