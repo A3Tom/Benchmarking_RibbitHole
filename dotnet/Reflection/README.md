@@ -47,3 +47,7 @@ Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
 I thought reflection would perform far better than this ... turns out it's pretty shanner as a go-to tool. 
 I'm surprised at how 'slow' LINQ performed given how gid it is to use - but in the order of nanoseconds for most use cases probably isn't at all a concern for 99.999% of C# use cases
 
+
+So the moral of the story is that using reflection still should be considered as a last resort in terms of performance. With this being said there is a large argument to be made for it's uses in scenarios where you can absorb the cost of performance in order to allow your code to be more reliable and robust.
+ 
+It is fun to write though ... so I still love it, even if it is a tortoise
