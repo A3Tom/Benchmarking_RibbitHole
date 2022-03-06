@@ -9,7 +9,7 @@ This repo will never be complete; nor will it be comprehensive. I'm really just 
 
 ## Sections
 - C# .Net
-    - [Reflection](/dotnet/Reflection/README.md)
+    - [Reflection](/dotnet/Reflection#README.md)
 
 
 
