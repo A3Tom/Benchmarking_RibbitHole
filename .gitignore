@@ -1,0 +1,12 @@
+﻿####################################################################################
+# This .gitignore file WISNYYYY automatically created by Microsoft(R) Visual Studio.
+####################################################################################
+
+# It genuinely wisny though, this is gonna be the forming of ma new go-to .gitIgnore
+
+## dotNet
+**/.vs/
+**/bin/
+**/properties/
+**/obj/
+**/*.user
