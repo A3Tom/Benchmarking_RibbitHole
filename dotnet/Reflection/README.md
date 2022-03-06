@@ -29,4 +29,21 @@ I reckon the reflection method will surprise me with how fast it is now and so I
 
 #### Actual
 
-TBD
+```
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19043.1526 (21H1/May2021Update)
+Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
+.NET SDK=6.0.101
+  [Host]     : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT  [AttachedDebugger]
+  DefaultJob : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+
+
+|                   Method |        Mean |      Error |      StdDev |      Median |
+|------------------------- |------------:|-----------:|------------:|------------:|
+| DeserializeByIndex_Plain |    81.28 ns |   4.211 ns |    12.41 ns |    74.92 ns |
+|  DeserializeByIndex_Linq |   172.52 ns |   9.471 ns |    27.92 ns |   159.18 ns |
+|  DeserializeByReflection | 8,106.40 ns | 384.511 ns | 1,133.74 ns | 7,713.99 ns |
+```
+
+I thought reflection would perform far better than this ... turns out it's pretty shanner as a go-to tool. 
+I'm surprised at how 'slow' LINQ performed given how gid it is to use - but in the order of nanoseconds for most use cases probably isn't at all a concern for 99.999% of C# use cases
+
